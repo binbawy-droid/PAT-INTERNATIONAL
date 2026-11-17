@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bright-red: #ff0000;
+  --color-bright-green: #00ff00;
+  --color-bright-purple: #bf00ff;
+  --color-bright-cyan: #00ffff;
+  --color-bright-black: #000000;
+
+  --color-sec-navy: #0a0f1a;
+  --color-sec-charcoal: #161c28;
+  --color-sec-slate: #232d3d;
+  --color-sec-accent: #334155;
+  --color-sec-gold: #c5a059;
+}
+
+@utility bg-grid-slate-900 {
+  background-image: radial-gradient(circle, #1e293b 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+@utility text-neon-red {
+  color: #ff0000;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+@utility text-neon-green {
+  color: #00ff00;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+@utility text-neon-purple {
+  color: #bf00ff;
+  text-shadow: 0 0 5px rgba(191, 0, 255, 0.5), 0 0 10px rgba(191, 0, 255, 0.3);
+}
+
+@utility text-neon-cyan {
+  color: #00ffff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+@utility bg-neon-gradient {
+  background: linear-gradient(135deg, #ff0000, #bf00ff, #00ffff);
+}
